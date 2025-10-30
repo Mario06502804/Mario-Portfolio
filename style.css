@@ -178,34 +178,8 @@ p { font-size: 16px; color: var(--text); }
   gap: 10px;
 }
 
-/* Info-Karte */
-.info-card {
-  background: linear-gradient(180deg, #ffffff, #f8fbff);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 18px;
-  box-shadow: var(--shadow);
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-}
-.info-card .avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: #dbe6ff;
-  border: 1px solid #c7d6ff;
-  flex: none;
-}
-.info-card .info h3 { margin: 0 0 6px; }
-.info-card .mini {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  color: var(--muted);
-}
-.info-card .mini li { margin: 4px 0; }
-.info-card a { color: var(--primary); text-decoration: none; }
+
+
 
 /* Skills */
 .skills {
@@ -308,3 +282,98 @@ p { font-size: 16px; color: var(--text); }
   .nav.open { display: flex; }
   .menu-toggle { display: block; }
 }
+/* === ABOUT SECTION (TECH STYLE) === */
+.about-dark {
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 100px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: center;
+}
+.about-photo img {
+  width: 220px;
+  height: 220px;
+  border-radius: 0%;
+  object-fit: cover;
+  border: 3px solid #2f6fed;
+  box-shadow: 0 0 25px rgba(47,111,237,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-photo img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 35px rgba(47,111,237,0.6);
+}
+
+.about-text {
+  flex: 2 1 400px;
+  max-width: 650px;
+}
+
+.about-text h2 {
+  color: #58a6ff;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.about-text p {
+  color: #c9d1d9;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.about-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.about-info li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8b949e;
+}
+
+.about-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.about-links a {
+  color: #58a6ff;
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(56,139,253,0.1);
+  border: 1px solid rgba(56,139,253,0.3);
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+.about-links a:hover {
+  background: #2385ff;
+  color: #fff;
+  border-color: #2385ff;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-links {
+    justify-content: center;
+  }
+}
+
