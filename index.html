@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario Mendes | Portfolio</title>
+  <meta name="description" content="Portfolio von Mario Mendes – Fachinformatiker Anwendungsentwicklung (Umschulung). Projekte, Zertifikate, Lebenslauf, Kontakt." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="brand">Mario <span>Mendes</span></a>
+      <nav class="nav">
+        <a href="#home">Start</a>
+        <a href="#about">Über mich</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projekte</a>
+        <a href="#certs">Zertifikate</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menü"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="Background.jpg" alt="Hintergrund" />
+      <div class="overlay"></div>
+    </div>
+    <div class="container hero-inner reveal">
+      <h1>Hallo, ich bin <span>Mario Mendes</span></h1>
+      <p class="lead">Angehender Fachinformatiker für Anwendungsentwicklung. Ich mag sauberen, gut dokumentierten Code – vor allem in C#/.NET.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-code"></i> Projekte ansehen</a>
+        <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-envelope"></i> Kontakt</a>
+        <a class="btn" href="Lebenslauf_MarioMendes.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Lebenslauf (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über mich -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="reveal">
+        <h2>Über mich</h2>
+        <p>Ich komme aus Portugal und wohne seit 2013 in Durbach (Ortenaukreis) und absolviere aktuell eine Umschulung zum <strong>Fachinformatiker für Anwendungsentwicklung</strong> in Karlsruhe.</p>
+        <p>Praxis: C#/.NET, einfache SQL-Datenmodelle, klare UI-Flows für Desktop-Apps. Ich arbeite strukturiert, dokumentiere sauber und lerne täglich dazu.</p>
+        <ul class="tags">
+          <li>C# / .NET</li><li>OOP</li><li>SQL Basics</li><li>Git & GitHub</li><li>HTML & CSS</li>
+        </ul>
+      </div>
+      <aside class="info-card reveal">
+        <div class="avatar"></div>
+        <div class="info">
+          <h3>Mário Mendes</h3>
+          <p>Motivierter angehender Anwendungsentwickler mit Fokus auf C#/.NET, HTML, CSS und sauberen Code-Strukturen.</p>
+          <ul class="mini">
+            <li><i class="fa-solid fa-location-dot"></i> Durbach, DE</li>
+            <li><i class="fa-solid fa-graduation-cap"></i> Umschulung (2025–2027)</li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Mario06502804" target="_blank">GitHub</a></li>
+            <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/m%C3%A1rio-mendes-35871a202/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container reveal">
+      <h2>Meine Skills</h2>
+      <div class="skills">
+        <div class="skill"><span>C# / .NET</span><div class="bar"><div class="fill" style="--w: 85%"></div></div></div>
+        <div class="skill"><span>OOP / Design</span><div class="bar"><div class="fill" style="--w: 80%"></div></div></div>
+        <div class="skill"><span>SQL Basics</span><div class="bar"><div class="fill" style="--w: 70%"></div></div></div>
+        <div class="skill"><span>HTML & CSS</span><div class="bar"><div class="fill" style="--w: 75%"></div></div></div>
+        <div class="skill"><span>Git & GitHub</span><div class="bar"><div class="fill" style="--w: 65%"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" style="--w: 55%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projekte -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="reveal">Projekte</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <h3>EasyRest – Kassensystem (C#)</h3>
+            <p>Artikel per PLU, Tischzuordnung, Bestellübersicht, Rechnung inkl. MwSt., temporäre Datenspeicherung.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://github.com/Mario06502804" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <h3>Mini-ERP (C#)</h3>
+            <p>CRUD für Kunden/Artikel/Bestellungen, strukturierte Klassen, Beispiel-Datenhaltung.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://github.com/Mario06502804" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <h3>Kellner 7-Tage-Projekt (C#)</h3>
+            <p>Bestellungen je Tisch aufnehmen/anzeigen, kommentierter Code, README + Dokumentation.</p>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="https://github.com/Mario06502804" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zertifikate -->
+  <section id="certs" class="section alt">
+    <div class="container">
+      <h2 class="reveal">Zertifikate</h2>
+      <div class="cards">
+        <article class="card reveal"><h3>C# Grundkurs 1</h3><a class="btn" href="Zertifikate/CSharp_1.pdf" target="_blank">PDF ansehen</a></article>
+        <article class="card reveal"><h3>C# Grundkurs 2</h3><a class="btn" href="Zertifikate/CSharp_2.pdf" target="_blank">PDF ansehen</a></article>
+        <article class="card reveal"><h3>SoloLearn C#</h3><a class="btn" href="Zertifikate/CSharp_SoloLearn.pdf" target="_blank">PDF ansehen</a></article>
+        <article class="card reveal"><h3>NWK-GL 1</h3><a class="btn" href="Zertifikate/NWK-GL_1.pdf" target="_blank">PDF ansehen</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="section">
+    <div class="container reveal">
+      <h2>Kontakt</h2>
+      <p class="muted">Ich freue mich auf deine Nachricht.</p>
+      <form id="contactForm" class="contact-form" action="https://formspree.io/f/xjkpojno" method="POST">
+        <div class="grid-2">
+          <label><span>Name</span><input type="text" name="name" required></label>
+          <label><span>E-Mail</span><input type="email" name="email" required></label>
+        </div>
+        <label><span>Nachricht</span><textarea name="message" rows="6" required></textarea></label>
+        <input type="hidden" name="_subject" value="Neue Anfrage über Portfolio" />
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Senden</button>
+          <span id="formStatus" class="muted small" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Mario Mendes · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></small>
+      <div class="social">
+        <a href="https://www.facebook.com/mario.mendes568" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/mendes_fk2" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/m%C3%A1rio-mendes-35871a202/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.15});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
